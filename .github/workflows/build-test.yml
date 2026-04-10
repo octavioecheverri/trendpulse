@@ -3,7 +3,7 @@ name: build-test
 on:
   pull_request:
   push:
-    branches: [main, staging]
+    branches: [main]
 
 concurrency:
   group: build-test-${{ github.ref }}

@@ -4,6 +4,7 @@ on:
   workflow_run:
     workflows: [deploy]
     types: [completed]
+    branches: [main]
   workflow_dispatch:
     inputs:
       url:
@@ -16,6 +17,7 @@ jobs:
     if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
     name: Smoke e2e (Playwright)
     runs-on: ubuntu-latest
+    environment: production
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
@@ -30,7 +32,7 @@ jobs:
       - name: Run smoke tests
         run: pnpm test:e2e:smoke
         env:
-          BASE_URL: ${{ github.event.inputs.url || (github.event.workflow_run.head_branch == 'main' && 'https://trendpul.se' || 'https://staging.trendpul.se') }}
+          BASE_URL: ${{ github.event.inputs.url || 'https://trendpul.se' }}
           E2E_TEST_USER_EMAIL: ${{ secrets.E2E_TEST_USER_EMAIL }}
           E2E_TEST_USER_PASSWORD: ${{ secrets.E2E_TEST_USER_PASSWORD }}
       - uses: actions/upload-artifact@v4
@@ -53,7 +55,7 @@ jobs:
         run: npm install -g @lhci/cli
       - name: Run Lighthouse
         run: |
-          lhci collect --url=${{ github.event.inputs.url || (github.event.workflow_run.head_branch == 'main' && 'https://trendpul.se' || 'https://staging.trendpul.se') }}
+          lhci collect --url=${{ github.event.inputs.url || 'https://trendpul.se' }}
           lhci assert --preset=lighthouse:recommended || true
 
   rollback-on-fail:
