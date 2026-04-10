@@ -1,0 +1,169 @@
+{
+  "meta": {
+    "title": "TrendPulse — the stock market for fashion trends",
+    "tagline": "Spot it before Vogue does."
+  },
+  "nav": {
+    "home": "Home",
+    "pieces": "Pieces",
+    "outfits": "Outfits",
+    "submit": "Share",
+    "premium": "Premium",
+    "login": "Log in",
+    "signup": "Sign up",
+    "logout": "Log out",
+    "account": "Account",
+    "changePassword": "Change password",
+    "deleteAccount": "Delete account",
+    "myProfile": "My profile",
+    "mySubmissions": "My submissions",
+    "admin": "Admin"
+  },
+  "home": {
+    "trendingPieces": "Trending pieces",
+    "trendingOutfits": "Trending outfits",
+    "sharePiece": "Share a piece",
+    "shareOutfit": "Share an outfit",
+    "selectCity": "Choose city",
+    "loading": "Loading trends…",
+    "empty": "No trends here yet — be the first to share one.",
+    "fresh": "Fresh",
+    "hot": "Hot",
+    "breaking": "Breaking"
+  },
+  "piece": {
+    "votes": "{count, plural, =0 {no votes} one {# vote} other {# votes}}",
+    "shopThis": "Shop this",
+    "viewOnInstagram": "View on Instagram",
+    "viewOnTikTok": "View on TikTok",
+    "category": {
+      "top": "Top",
+      "bottom": "Bottom",
+      "dress": "Dress",
+      "outerwear": "Outerwear",
+      "shoes": "Shoes",
+      "bag": "Bag",
+      "accessory": "Accessory",
+      "jewelry": "Jewelry",
+      "headwear": "Headwear"
+    }
+  },
+  "outfit": {
+    "taggedPieces": "Tagged pieces",
+    "votes": "{count, plural, =0 {no votes} one {# vote} other {# votes}}"
+  },
+  "submit": {
+    "pieceTitle": "Share a piece",
+    "outfitTitle": "Share an outfit",
+    "mediaType": "How do you want to share it?",
+    "uploadPhoto": "Upload a photo",
+    "pasteLink": "Paste an Instagram or TikTok link",
+    "title": "Title",
+    "titlePlaceholder": "What are we looking at?",
+    "description": "Description",
+    "descriptionPlaceholder": "Tell us why this is interesting…",
+    "city": "City",
+    "category": "Category",
+    "affiliateUrl": "Where can people buy it? (optional)",
+    "submitButton": "Submit for review",
+    "thanks": "Thanks! We'll review your submission shortly.",
+    "pendingNotice": "Your submission is in review. It will appear in the feed once approved."
+  },
+  "auth": {
+    "loginTitle": "Welcome back",
+    "signupTitle": "Join TrendPulse",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm password",
+    "continueWithGoogle": "Continue with Google",
+    "or": "or",
+    "forgotPassword": "Forgot password?",
+    "ageConfirmation": "I confirm I am 13 years or older",
+    "agreeToTerms": "I agree to the Terms and Privacy Policy",
+    "alreadyHaveAccount": "Already have an account?",
+    "noAccount": "Don't have an account?",
+    "resetPassword": "Reset password",
+    "resetPasswordPrompt": "Enter your email and we'll send you a reset link.",
+    "resetPasswordSuccess": "Check your email for the reset link.",
+    "logoutConfirm": "Are you sure you want to log out?"
+  },
+  "account": {
+    "title": "My account",
+    "handle": "Handle",
+    "displayName": "Display name",
+    "homeCity": "Home city",
+    "dangerZone": "Danger zone",
+    "deleteAccountTitle": "Delete account",
+    "deleteAccountWarning": "This will anonymize your submissions and log you out permanently. This cannot be undone.",
+    "deleteAccountConfirm": "Yes, delete my account"
+  },
+  "premium": {
+    "title": "TrendPulse Premium — coming soon",
+    "subtitle": "Trends 48 hours early, full city reports, CSV export.",
+    "earlyAccess": "Early access to breaking trends",
+    "cityReports": "Deep-dive city reports",
+    "csvExport": "Export trend data as CSV",
+    "joinWaitlist": "Join the waitlist",
+    "waitlistJoined": "You're on the list. We'll email you when it launches."
+  },
+  "newsletter": {
+    "title": "The weekly digest",
+    "subtitle": "Top 5 trends of the week, every Monday.",
+    "subscribe": "Subscribe"
+  },
+  "legal": {
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "cookies": {
+      "title": "We use cookies",
+      "description": "We use cookies for analytics and to improve your experience. You can opt out anytime.",
+      "acceptAll": "Accept all",
+      "acceptNecessary": "Only necessary",
+      "customize": "Customize"
+    }
+  },
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "approve": "Approve",
+    "reject": "Reject",
+    "loading": "Loading…",
+    "error": "Something went wrong. Please try again.",
+    "required": "Required",
+    "optional": "Optional"
+  },
+  "admin": {
+    "dashboard": "Admin dashboard",
+    "queue": "Moderation queue",
+    "cities": "Cities",
+    "users": "Users",
+    "reports": "Reports",
+    "pending": "Pending",
+    "approvedToday": "Approved today",
+    "breakingNow": "Breaking now",
+    "approveSelected": "Approve selected",
+    "rejectWithReason": "Reject (reason)",
+    "addCity": "Add city",
+    "cityName": "City name",
+    "countryCode": "Country code",
+    "officialLanguages": "Official languages",
+    "autoTranslateNotice": "New languages will be auto-translated via DeepL."
+  },
+  "cities": {
+    "tokyo": "Tokyo",
+    "london": "London",
+    "new-york": "New York",
+    "paris": "Paris",
+    "lagos": "Lagos",
+    "copenhagen": "Copenhagen",
+    "seoul": "Seoul",
+    "mexico-city": "Mexico City",
+    "madrid": "Madrid",
+    "bogota": "Bogotá",
+    "santiago": "Santiago",
+    "sao-paulo": "São Paulo",
+    "lisbon": "Lisbon"
+  }
+}
