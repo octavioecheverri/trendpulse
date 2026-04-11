@@ -5,7 +5,7 @@ import { ArrowBigDown, ArrowBigUp, ShoppingBag } from 'lucide-react';
 
 export type PieceCardData = {
   id: string;
-  title: string;
+  titleKey: string;
   category:
     | 'top'
     | 'bottom'
@@ -32,6 +32,7 @@ type Props = {
 
 export function PieceCard({ piece }: Props) {
   const t = useTranslations();
+  const title = t(piece.titleKey as Parameters<typeof t>[0]);
   const score = piece.upvotes - piece.downvotes;
 
   return (
@@ -47,7 +48,7 @@ export function PieceCard({ piece }: Props) {
           // eslint-disable-next-line @next/next/no-img-element
           <img
             src={piece.photoUrl}
-            alt={piece.title}
+            alt={title}
             className="size-full object-cover"
             loading="lazy"
           />
@@ -62,7 +63,7 @@ export function PieceCard({ piece }: Props) {
 
       <div className="space-y-2 p-3">
         <div className="flex items-start justify-between gap-2">
-          <h3 className="line-clamp-2 text-sm font-medium">{piece.title}</h3>
+          <h3 className="line-clamp-2 text-sm font-medium">{title}</h3>
           <span className="shrink-0 rounded-full bg-pink-100 px-2 py-0.5 text-[10px] font-medium uppercase tracking-wider">
             {t(`piece.category.${piece.category}` as 'piece.category.top')}
           </span>

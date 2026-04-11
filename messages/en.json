@@ -151,6 +151,24 @@
     "officialLanguages": "Official languages",
     "autoTranslateNotice": "New languages will be auto-translated via DeepL."
   },
+  "stubData": {
+    "pieces": {
+      "p1": "Oversized cargo skirt with side pockets",
+      "p2": "Sheer polka dot blouse",
+      "p3": "Chunky platform mary janes",
+      "p4": "Micro pearl handbag",
+      "p5": "Knit balaclava in butter yellow",
+      "p6": "Asymmetric ruffled mini dress",
+      "p7": "Vintage denim jacket",
+      "p8": "Layered chrome pendants"
+    },
+    "outfits": {
+      "o1": "Soft pink monochrome with pearls",
+      "o2": "Y2K denim & chrome",
+      "o3": "Cottagecore picnic look",
+      "o4": "Tokyo street layered tailoring"
+    }
+  },
   "cities": {
     "tokyo": "Tokyo",
     "london": "London",

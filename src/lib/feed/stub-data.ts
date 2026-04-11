@@ -9,7 +9,7 @@ import type { OutfitCardData } from '@/components/OutfitCard';
 export const STUB_PIECES: PieceCardData[] = [
   {
     id: 'p1',
-    title: 'Oversized cargo skirt with side pockets',
+    titleKey: 'stubData.pieces.p1',
     category: 'bottom',
     mediaType: 'photo',
     photoUrl:
@@ -20,7 +20,7 @@ export const STUB_PIECES: PieceCardData[] = [
   },
   {
     id: 'p2',
-    title: 'Sheer polka dot blouse',
+    titleKey: 'stubData.pieces.p2',
     category: 'top',
     mediaType: 'photo',
     photoUrl:
@@ -31,7 +31,7 @@ export const STUB_PIECES: PieceCardData[] = [
   },
   {
     id: 'p3',
-    title: 'Chunky platform mary janes',
+    titleKey: 'stubData.pieces.p3',
     category: 'shoes',
     mediaType: 'photo',
     photoUrl:
@@ -42,7 +42,7 @@ export const STUB_PIECES: PieceCardData[] = [
   },
   {
     id: 'p4',
-    title: 'Micro pearl handbag',
+    titleKey: 'stubData.pieces.p4',
     category: 'bag',
     mediaType: 'photo',
     photoUrl:
@@ -54,7 +54,7 @@ export const STUB_PIECES: PieceCardData[] = [
   },
   {
     id: 'p5',
-    title: 'Knit balaclava in butter yellow',
+    titleKey: 'stubData.pieces.p5',
     category: 'headwear',
     mediaType: 'photo',
     photoUrl:
@@ -65,7 +65,7 @@ export const STUB_PIECES: PieceCardData[] = [
   },
   {
     id: 'p6',
-    title: 'Asymmetric ruffled mini dress',
+    titleKey: 'stubData.pieces.p6',
     category: 'dress',
     mediaType: 'photo',
     photoUrl:
@@ -76,7 +76,7 @@ export const STUB_PIECES: PieceCardData[] = [
   },
   {
     id: 'p7',
-    title: 'Vintage denim jacket',
+    titleKey: 'stubData.pieces.p7',
     category: 'outerwear',
     mediaType: 'photo',
     photoUrl:
@@ -87,7 +87,7 @@ export const STUB_PIECES: PieceCardData[] = [
   },
   {
     id: 'p8',
-    title: 'Layered chrome pendants',
+    titleKey: 'stubData.pieces.p8',
     category: 'jewelry',
     mediaType: 'photo',
     photoUrl:
@@ -102,7 +102,7 @@ export const STUB_PIECES: PieceCardData[] = [
 export const STUB_OUTFITS: OutfitCardData[] = [
   {
     id: 'o1',
-    title: 'Soft pink monochrome with pearls',
+    titleKey: 'stubData.outfits.o1',
     photoUrl:
       'https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=600',
     upvotes: 71,
@@ -111,7 +111,7 @@ export const STUB_OUTFITS: OutfitCardData[] = [
   },
   {
     id: 'o2',
-    title: 'Y2K denim & chrome',
+    titleKey: 'stubData.outfits.o2',
     photoUrl:
       'https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=600',
     upvotes: 58,
@@ -120,7 +120,7 @@ export const STUB_OUTFITS: OutfitCardData[] = [
   },
   {
     id: 'o3',
-    title: 'Cottagecore picnic look',
+    titleKey: 'stubData.outfits.o3',
     photoUrl:
       'https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=600',
     upvotes: 42,
@@ -129,7 +129,7 @@ export const STUB_OUTFITS: OutfitCardData[] = [
   },
   {
     id: 'o4',
-    title: 'Tokyo street layered tailoring',
+    titleKey: 'stubData.outfits.o4',
     photoUrl:
       'https://images.unsplash.com/photo-1483985988355-763728e1935b?w=600',
     upvotes: 2,
