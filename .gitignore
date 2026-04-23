@@ -40,8 +40,11 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# private business docs (revenue projections, strategy)
-/docs/
+# private business docs (revenue projections, strategy) — hide contents by default
+/docs/*
+# ...but dev specs and setup guides should be versioned
+!/docs/superpowers/
+!/docs/SETUP.md
 
 # claude / agent artifacts
 CLAUDE.md
