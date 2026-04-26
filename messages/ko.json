@@ -82,10 +82,15 @@
   },
   "account": {
     "title": "내 계정",
+    "displayName": "표시 이름",
+    "displayNamePlaceholder": "뭐라고 부를까요?",
+    "displayNameHint": "투표와 게시물 옆에 표시됩니다.",
     "homeCity": "홈 도시",
     "homeCityHint": "피드 개인화에 사용됩니다.",
+    "languageHint": "언어는 헤더의 선택기에서 변경합니다.",
     "save": "저장",
     "saved": "저장됨",
+    "saveError": "저장하지 못했습니다. 다시 시도하세요.",
     "signOut": "로그아웃"
   },
   "premium": {

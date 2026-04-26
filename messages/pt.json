@@ -82,10 +82,15 @@
   },
   "account": {
     "title": "Sua conta",
+    "displayName": "Nome",
+    "displayNamePlaceholder": "Como devemos te chamar?",
+    "displayNameHint": "Mostrado ao lado dos seus votos e publicações.",
     "homeCity": "Cidade principal",
     "homeCityHint": "Usada para personalizar seu feed.",
+    "languageHint": "O idioma se muda no seletor do cabeçalho.",
     "save": "Salvar",
     "saved": "Salvo",
+    "saveError": "Não foi possível salvar. Tente novamente.",
     "signOut": "Sair"
   },
   "premium": {

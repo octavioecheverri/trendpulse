@@ -82,10 +82,15 @@
   },
   "account": {
     "title": "Votre compte",
+    "displayName": "Nom affiché",
+    "displayNamePlaceholder": "Comment doit-on vous appeler ?",
+    "displayNameHint": "Affiché à côté de vos votes et publications.",
     "homeCity": "Ville principale",
     "homeCityHint": "Utilisé pour personnaliser votre feed.",
+    "languageHint": "La langue se change depuis le sélecteur en haut.",
     "save": "Enregistrer",
     "saved": "Enregistré",
+    "saveError": "Échec de l'enregistrement. Réessayez.",
     "signOut": "Se déconnecter"
   },
   "premium": {

@@ -82,10 +82,15 @@
   },
   "account": {
     "title": "Your account",
+    "displayName": "Display name",
+    "displayNamePlaceholder": "What should we call you?",
+    "displayNameHint": "Shown next to your votes and submissions.",
     "homeCity": "Home city",
     "homeCityHint": "Used to personalize your feed.",
+    "languageHint": "Language is set by the switcher in the header.",
     "save": "Save",
     "saved": "Saved",
+    "saveError": "Couldn't save. Try again.",
     "signOut": "Sign out"
   },
   "premium": {

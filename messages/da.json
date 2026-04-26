@@ -82,10 +82,15 @@
   },
   "account": {
     "title": "Din konto",
+    "displayName": "Visningsnavn",
+    "displayNamePlaceholder": "Hvad skal vi kalde dig?",
+    "displayNameHint": "Vises ved siden af dine stemmer og opslag.",
     "homeCity": "Hjemby",
     "homeCityHint": "Bruges til at tilpasse dit feed.",
+    "languageHint": "Sproget skiftes via vælgeren i toppen.",
     "save": "Gem",
     "saved": "Gemt",
+    "saveError": "Kunne ikke gemme. Prøv igen.",
     "signOut": "Log ud"
   },
   "premium": {

@@ -82,10 +82,15 @@
   },
   "account": {
     "title": "あなたのアカウント",
+    "displayName": "表示名",
+    "displayNamePlaceholder": "なんと呼べばいい？",
+    "displayNameHint": "投票や投稿の横に表示されます。",
     "homeCity": "ホームシティ",
     "homeCityHint": "フィードのパーソナライズに使用されます。",
+    "languageHint": "言語はヘッダーのセレクターで変更します。",
     "save": "保存",
     "saved": "保存しました",
+    "saveError": "保存できませんでした。もう一度お試しください。",
     "signOut": "サインアウト"
   },
   "premium": {
