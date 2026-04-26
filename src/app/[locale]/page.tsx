@@ -1,4 +1,5 @@
 import { setRequestLocale } from 'next-intl/server';
+import { redirect } from 'next/navigation';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { FeedSection } from '@/components/FeedSection';
@@ -10,15 +11,19 @@ import type { OutfitCardData } from '@/components/OutfitCard';
 
 type Props = {
   params: Promise<{ locale: string }>;
-  searchParams: Promise<{ city?: string }>;
+  searchParams: Promise<{ city?: string; code?: string }>;
 };
 
 export const dynamic = 'force-dynamic';
 
 export default async function HomePage({ params, searchParams }: Props) {
   const { locale } = await params;
-  const { city } = await searchParams;
+  const { city, code } = await searchParams;
   setRequestLocale(locale);
+
+  // Fallback for misconfigured Supabase Site URL: if a magic-link `?code=`
+  // lands at the home page (root), forward it to the proper callback handler.
+  if (code) redirect(`/auth/callback?code=${encodeURIComponent(code)}` as never);
 
   const citySlug = city ?? 'global';
 

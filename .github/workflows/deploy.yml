@@ -12,6 +12,7 @@ concurrency:
 jobs:
   deploy-supabase:
     name: Apply Supabase migrations
+    if: github.repository == 'octavioecheverri/trendpulse'
     runs-on: ubuntu-latest
     environment: ${{ github.ref == 'refs/heads/main' && 'production' || 'dev' }}
     steps:
@@ -43,6 +44,7 @@ jobs:
 
   deploy-vercel:
     name: Deploy to Vercel
+    if: github.repository == 'octavioecheverri/trendpulse'
     runs-on: ubuntu-latest
     needs: [deploy-supabase]
     environment: ${{ github.ref == 'refs/heads/main' && 'production' || 'dev' }}
