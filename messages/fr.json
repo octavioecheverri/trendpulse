@@ -10,13 +10,8 @@
     "submit": "Partager",
     "premium": "Premium",
     "login": "Se connecter",
-    "signup": "S'inscrire",
     "logout": "Se déconnecter",
     "account": "Compte",
-    "changePassword": "Changer le mot de passe",
-    "deleteAccount": "Supprimer le compte",
-    "myProfile": "Mon profil",
-    "mySubmissions": "Mes publications",
     "admin": "Admin"
   },
   "home": {
@@ -26,10 +21,14 @@
     "shareOutfit": "Partager une tenue",
     "selectCity": "Choisir une ville",
     "loading": "Chargement des tendances…",
-    "empty": "Aucune tendance ici pour l'instant — soyez le premier à en partager une.",
     "fresh": "Nouveau",
     "hot": "Hot",
-    "breaking": "Viral"
+    "breaking": "Viral",
+    "emptyState": {
+      "piecesTitle": "Aucune pièce tendance à {city} pour l'instant",
+      "outfitsTitle": "Aucune tenue tendance à {city} pour l'instant",
+      "cta": "Soyez le premier à partager"
+    }
   },
   "piece": {
     "votes": "{count, plural, =0 {aucun vote} one {# vote} other {# votes}}",
@@ -71,31 +70,23 @@
   },
   "auth": {
     "loginTitle": "Bon retour",
-    "signupTitle": "Rejoignez TrendPulse",
+    "loginSubtitle": "Connectez-vous ou inscrivez-vous — nous vous enverrons un lien par e-mail.",
     "email": "E-mail",
-    "password": "Mot de passe",
-    "confirmPassword": "Confirmer le mot de passe",
+    "sendMagicLink": "Envoyer le lien magique",
+    "checkInbox": "Vérifiez votre boîte de réception pour le lien de connexion.",
+    "errorExpired": "Ce lien a expiré. Demandez-en un nouveau.",
+    "errorGeneric": "Une erreur s'est produite. Réessayez.",
     "continueWithGoogle": "Continuer avec Google",
     "or": "ou",
-    "forgotPassword": "Mot de passe oublié ?",
-    "ageConfirmation": "Je confirme avoir 13 ans ou plus",
-    "agreeToTerms": "J'accepte les Conditions et la Politique de confidentialité",
-    "alreadyHaveAccount": "Vous avez déjà un compte ?",
-    "noAccount": "Pas encore de compte ?",
-    "resetPassword": "Réinitialiser le mot de passe",
-    "resetPasswordPrompt": "Entrez votre e-mail et nous vous enverrons un lien de réinitialisation.",
-    "resetPasswordSuccess": "Vérifiez votre e-mail pour le lien de réinitialisation.",
     "logoutConfirm": "Êtes-vous sûr de vouloir vous déconnecter ?"
   },
   "account": {
-    "title": "Mon compte",
-    "handle": "Identifiant",
-    "displayName": "Nom affiché",
-    "homeCity": "Ville",
-    "dangerZone": "Zone de danger",
-    "deleteAccountTitle": "Supprimer le compte",
-    "deleteAccountWarning": "Cela anonymisera vos publications et vous déconnectera définitivement. Cette action est irréversible.",
-    "deleteAccountConfirm": "Oui, supprimer mon compte"
+    "title": "Votre compte",
+    "homeCity": "Ville principale",
+    "homeCityHint": "Utilisé pour personnaliser votre feed.",
+    "save": "Enregistrer",
+    "saved": "Enregistré",
+    "signOut": "Se déconnecter"
   },
   "premium": {
     "title": "TrendPulse Premium — bientôt disponible",
@@ -150,24 +141,6 @@
     "countryCode": "Code pays",
     "officialLanguages": "Langues officielles",
     "autoTranslateNotice": "Les nouvelles langues seront traduites automatiquement via DeepL."
-  },
-  "stubData": {
-    "pieces": {
-      "p1": "Jupe cargo oversize avec poches latérales",
-      "p2": "Blouse transparente à pois",
-      "p3": "Mary Janes à plateforme épaisse",
-      "p4": "Micro sac en perles",
-      "p5": "Cagoule tricotée jaune beurre",
-      "p6": "Mini robe asymétrique à volants",
-      "p7": "Veste en jean vintage",
-      "p8": "Pendentifs chromés superposés"
-    },
-    "outfits": {
-      "o1": "Monochrome rose doux avec perles",
-      "o2": "Y2K denim et chrome",
-      "o3": "Look cottagecore pique-nique",
-      "o4": "Superposition tailleur street de Tokyo"
-    }
   },
   "cities": {
     "tokyo": "Tokyo",

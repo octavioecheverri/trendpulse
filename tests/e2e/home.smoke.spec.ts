@@ -7,6 +7,12 @@ test.describe('home @smoke', () => {
     await expect(page.getByRole('heading', { name: 'Trending outfits' })).toBeVisible();
   });
 
+  test('shows empty state copy when DB has no items', async ({ page }) => {
+    await page.goto('/en');
+    await expect(page.getByText(/No trending pieces in/i)).toBeVisible();
+    await expect(page.getByText(/No trending outfits in/i)).toBeVisible();
+  });
+
   test('language switcher updates the URL locale', async ({ page }) => {
     await page.goto('/en');
     await page.getByLabel('Language').selectOption('es');
@@ -20,8 +26,8 @@ test.describe('home @smoke', () => {
     expect(terms?.status()).toBe(200);
   });
 
-  test('newsletter subscribe button is visible', async ({ page }) => {
+  test('header shows Sign in link when anonymous', async ({ page }) => {
     await page.goto('/en');
-    await expect(page.getByRole('link', { name: 'Subscribe' })).toBeVisible();
+    await expect(page.getByRole('link', { name: 'Log in' })).toBeVisible();
   });
 });

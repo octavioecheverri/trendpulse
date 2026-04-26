@@ -10,13 +10,8 @@
     "submit": "Del",
     "premium": "Premium",
     "login": "Log ind",
-    "signup": "Opret konto",
     "logout": "Log ud",
     "account": "Konto",
-    "changePassword": "Skift adgangskode",
-    "deleteAccount": "Slet konto",
-    "myProfile": "Min profil",
-    "mySubmissions": "Mine opslag",
     "admin": "Admin"
   },
   "home": {
@@ -26,10 +21,14 @@
     "shareOutfit": "Del et outfit",
     "selectCity": "Vælg by",
     "loading": "Indlæser trends…",
-    "empty": "Ingen trends her endnu — vær den første til at dele en.",
     "fresh": "Ny",
     "hot": "Hot",
-    "breaking": "Viral"
+    "breaking": "Viral",
+    "emptyState": {
+      "piecesTitle": "Ingen populære stykker i {city} endnu",
+      "outfitsTitle": "Ingen populære outfits i {city} endnu",
+      "cta": "Vær den første til at dele"
+    }
   },
   "piece": {
     "votes": "{count, plural, =0 {ingen stemmer} one {# stemme} other {# stemmer}}",
@@ -71,31 +70,23 @@
   },
   "auth": {
     "loginTitle": "Velkommen tilbage",
-    "signupTitle": "Tilmeld dig TrendPulse",
+    "loginSubtitle": "Log ind eller tilmeld dig — vi sender dig et link på mail.",
     "email": "E-mail",
-    "password": "Adgangskode",
-    "confirmPassword": "Bekræft adgangskode",
+    "sendMagicLink": "Send magisk link",
+    "checkInbox": "Tjek din indbakke for login-linket.",
+    "errorExpired": "Linket er udløbet. Anmod om et nyt.",
+    "errorGeneric": "Noget gik galt. Prøv igen.",
     "continueWithGoogle": "Fortsæt med Google",
     "or": "eller",
-    "forgotPassword": "Glemt adgangskode?",
-    "ageConfirmation": "Jeg bekræfter, at jeg er 13 år eller ældre",
-    "agreeToTerms": "Jeg accepterer vilkårene og privatlivspolitikken",
-    "alreadyHaveAccount": "Har du allerede en konto?",
-    "noAccount": "Har du ikke en konto?",
-    "resetPassword": "Nulstil adgangskode",
-    "resetPasswordPrompt": "Indtast din e-mail, og vi sender dig et nulstillingslink.",
-    "resetPasswordSuccess": "Tjek din e-mail for nulstillingslinket.",
     "logoutConfirm": "Er du sikker på, at du vil logge ud?"
   },
   "account": {
-    "title": "Min konto",
-    "handle": "Brugernavn",
-    "displayName": "Visningsnavn",
+    "title": "Din konto",
     "homeCity": "Hjemby",
-    "dangerZone": "Farezone",
-    "deleteAccountTitle": "Slet konto",
-    "deleteAccountWarning": "Dette anonymiserer dine opslag og logger dig ud permanent. Det kan ikke fortrydes.",
-    "deleteAccountConfirm": "Ja, slet min konto"
+    "homeCityHint": "Bruges til at tilpasse dit feed.",
+    "save": "Gem",
+    "saved": "Gemt",
+    "signOut": "Log ud"
   },
   "premium": {
     "title": "TrendPulse Premium — kommer snart",
@@ -150,24 +141,6 @@
     "countryCode": "Landekode",
     "officialLanguages": "Officielle sprog",
     "autoTranslateNotice": "Nye sprog oversættes automatisk via DeepL."
-  },
-  "stubData": {
-    "pieces": {
-      "p1": "Oversized cargonederdel med sidelommer",
-      "p2": "Gennemsigtig prikket bluse",
-      "p3": "Chunky platform mary janes",
-      "p4": "Mikro perletaske",
-      "p5": "Strikket balaklava i smørgul",
-      "p6": "Asymmetrisk flæseminikjole",
-      "p7": "Vintage denimjakke",
-      "p8": "Lagdelte kromvedhæng"
-    },
-    "outfits": {
-      "o1": "Blød pink monokrom med perler",
-      "o2": "Y2K denim og krom",
-      "o3": "Cottagecore picnic-look",
-      "o4": "Tokyo street lagdelt skræddersyning"
-    }
   },
   "cities": {
     "tokyo": "Tokyo",

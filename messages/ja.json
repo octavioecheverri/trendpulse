@@ -10,13 +10,8 @@
     "submit": "投稿",
     "premium": "プレミアム",
     "login": "ログイン",
-    "signup": "新規登録",
     "logout": "ログアウト",
     "account": "アカウント",
-    "changePassword": "パスワード変更",
-    "deleteAccount": "アカウント削除",
-    "myProfile": "マイプロフィール",
-    "mySubmissions": "マイ投稿",
     "admin": "管理者"
   },
   "home": {
@@ -26,10 +21,14 @@
     "shareOutfit": "コーデを投稿",
     "selectCity": "都市を選択",
     "loading": "トレンドを読み込み中…",
-    "empty": "まだトレンドがありません — 最初の投稿をしよう。",
     "fresh": "新着",
     "hot": "人気",
-    "breaking": "急上昇"
+    "breaking": "急上昇",
+    "emptyState": {
+      "piecesTitle": "{city}でトレンドのアイテムはまだありません",
+      "outfitsTitle": "{city}でトレンドのコーデはまだありません",
+      "cta": "最初にシェアしましょう"
+    }
   },
   "piece": {
     "votes": "{count, plural, =0 {投票なし} other {#票}}",
@@ -71,31 +70,23 @@
   },
   "auth": {
     "loginTitle": "おかえりなさい",
-    "signupTitle": "TrendPulseに参加",
+    "loginSubtitle": "サインインまたは登録 — メールでリンクをお送りします。",
     "email": "メールアドレス",
-    "password": "パスワード",
-    "confirmPassword": "パスワード確認",
+    "sendMagicLink": "マジックリンクを送信",
+    "checkInbox": "サインインリンクをメールで確認してください。",
+    "errorExpired": "このリンクは期限切れです。新しいものをリクエストしてください。",
+    "errorGeneric": "エラーが発生しました。もう一度お試しください。",
     "continueWithGoogle": "Googleで続ける",
     "or": "または",
-    "forgotPassword": "パスワードを忘れた？",
-    "ageConfirmation": "13歳以上であることを確認します",
-    "agreeToTerms": "利用規約とプライバシーポリシーに同意します",
-    "alreadyHaveAccount": "すでにアカウントをお持ちですか？",
-    "noAccount": "アカウントをお持ちでないですか？",
-    "resetPassword": "パスワードをリセット",
-    "resetPasswordPrompt": "メールアドレスを入力してください。リセットリンクを送信します。",
-    "resetPasswordSuccess": "リセットリンクをメールで確認してください。",
     "logoutConfirm": "ログアウトしてもよろしいですか？"
   },
   "account": {
-    "title": "マイアカウント",
-    "handle": "ユーザー名",
-    "displayName": "表示名",
-    "homeCity": "ホーム都市",
-    "dangerZone": "危険ゾーン",
-    "deleteAccountTitle": "アカウント削除",
-    "deleteAccountWarning": "投稿が匿名化され、永久にログアウトされます。元に戻すことはできません。",
-    "deleteAccountConfirm": "はい、アカウントを削除します"
+    "title": "あなたのアカウント",
+    "homeCity": "ホームシティ",
+    "homeCityHint": "フィードのパーソナライズに使用されます。",
+    "save": "保存",
+    "saved": "保存しました",
+    "signOut": "サインアウト"
   },
   "premium": {
     "title": "TrendPulse Premium — 近日公開",
@@ -150,24 +141,6 @@
     "countryCode": "国コード",
     "officialLanguages": "公用語",
     "autoTranslateNotice": "新しい言語はDeepLで自動翻訳されます。"
-  },
-  "stubData": {
-    "pieces": {
-      "p1": "サイドポケット付きオーバーサイズカーゴスカート",
-      "p2": "シアードット柄ブラウス",
-      "p3": "チャンキープラットフォームメリージェーン",
-      "p4": "マイクロパールハンドバッグ",
-      "p5": "バターイエローのニットバラクラバ",
-      "p6": "アシンメトリーフリルミニドレス",
-      "p7": "ヴィンテージデニムジャケット",
-      "p8": "レイヤードクロームペンダント"
-    },
-    "outfits": {
-      "o1": "パール付きソフトピンクモノクローム",
-      "o2": "Y2Kデニム＆クローム",
-      "o3": "コテージコアピクニックルック",
-      "o4": "東京ストリートレイヤードテーラリング"
-    }
   },
   "cities": {
     "tokyo": "東京",

@@ -23,6 +23,7 @@ type Props =
 
 export function FeedSection(props: Props) {
   const t = useTranslations('home');
+  const tc = useTranslations('cities');
   const [city, setCity] = useState(props.defaultCity);
 
   const title =
@@ -31,6 +32,8 @@ export function FeedSection(props: Props) {
     props.kind === 'pieces' ? t('sharePiece') : t('shareOutfit');
   const shareHref =
     props.kind === 'pieces' ? '/submit/piece' : '/submit/outfit';
+
+  const cityName = city === 'global' ? 'global' : tc(city as 'tokyo');
 
   return (
     <section className="space-y-4">
@@ -49,7 +52,7 @@ export function FeedSection(props: Props) {
       </div>
 
       {props.items.length === 0 ? (
-        <EmptyState />
+        <EmptyState kind={props.kind} cityName={cityName} />
       ) : (
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
           {props.kind === 'pieces'

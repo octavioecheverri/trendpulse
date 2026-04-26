@@ -3,33 +3,48 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { FeedSection } from '@/components/FeedSection';
 import { NewsletterBanner } from '@/components/NewsletterBanner';
-import { STUB_PIECES, STUB_OUTFITS } from '@/lib/feed/stub-data';
+import { createClient } from '@/lib/supabase/server';
+import { getHomeFeed } from '@/lib/feed/queries';
+import type { PieceCardData } from '@/components/PieceCard';
+import type { OutfitCardData } from '@/components/OutfitCard';
 
 type Props = {
   params: Promise<{ locale: string }>;
+  searchParams: Promise<{ city?: string }>;
 };
 
-export default async function HomePage({ params }: Props) {
+export const dynamic = 'force-dynamic';
+
+export default async function HomePage({ params, searchParams }: Props) {
   const { locale } = await params;
+  const { city } = await searchParams;
   setRequestLocale(locale);
 
-  // TODO(supabase): replace with rankFeed({ kind: 'pieces', cityId, limit: 24 })
-  // TODO(geoloc): use middleware-detected city instead of hardcoded 'tokyo'
-  const defaultCity = 'tokyo';
+  const citySlug = city ?? 'global';
+
+  const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+
+  const [pieces, outfits] = await Promise.all([
+    getHomeFeed({ citySlug, kind: 'pieces', limit: 24 }),
+    getHomeFeed({ citySlug, kind: 'outfits', limit: 12 }),
+  ]);
 
   return (
     <>
-      <Header loggedIn={false} />
+      <Header user={user} />
       <main className="mx-auto max-w-7xl space-y-12 px-4 py-8">
         <FeedSection
           kind="pieces"
-          defaultCity={defaultCity}
-          items={STUB_PIECES}
+          defaultCity={citySlug}
+          items={pieces as unknown as PieceCardData[]}
         />
         <FeedSection
           kind="outfits"
-          defaultCity={defaultCity}
-          items={STUB_OUTFITS}
+          defaultCity={citySlug}
+          items={outfits as unknown as OutfitCardData[]}
         />
       </main>
       <NewsletterBanner />

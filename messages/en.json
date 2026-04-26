@@ -10,13 +10,8 @@
     "submit": "Share",
     "premium": "Premium",
     "login": "Log in",
-    "signup": "Sign up",
     "logout": "Log out",
     "account": "Account",
-    "changePassword": "Change password",
-    "deleteAccount": "Delete account",
-    "myProfile": "My profile",
-    "mySubmissions": "My submissions",
     "admin": "Admin"
   },
   "home": {
@@ -26,10 +21,14 @@
     "shareOutfit": "Share an outfit",
     "selectCity": "Choose city",
     "loading": "Loading trends…",
-    "empty": "No trends here yet — be the first to share one.",
     "fresh": "Fresh",
     "hot": "Hot",
-    "breaking": "Breaking"
+    "breaking": "Breaking",
+    "emptyState": {
+      "piecesTitle": "No trending pieces in {city} yet",
+      "outfitsTitle": "No trending outfits in {city} yet",
+      "cta": "Be the first to share"
+    }
   },
   "piece": {
     "votes": "{count, plural, =0 {no votes} one {# vote} other {# votes}}",
@@ -71,31 +70,23 @@
   },
   "auth": {
     "loginTitle": "Welcome back",
-    "signupTitle": "Join TrendPulse",
+    "loginSubtitle": "Sign in or sign up — we'll email you a link.",
     "email": "Email",
-    "password": "Password",
-    "confirmPassword": "Confirm password",
+    "sendMagicLink": "Send magic link",
+    "checkInbox": "Check your inbox for the sign-in link.",
+    "errorExpired": "This link has expired. Request a new one.",
+    "errorGeneric": "Something went wrong. Try again.",
     "continueWithGoogle": "Continue with Google",
     "or": "or",
-    "forgotPassword": "Forgot password?",
-    "ageConfirmation": "I confirm I am 13 years or older",
-    "agreeToTerms": "I agree to the Terms and Privacy Policy",
-    "alreadyHaveAccount": "Already have an account?",
-    "noAccount": "Don't have an account?",
-    "resetPassword": "Reset password",
-    "resetPasswordPrompt": "Enter your email and we'll send you a reset link.",
-    "resetPasswordSuccess": "Check your email for the reset link.",
     "logoutConfirm": "Are you sure you want to log out?"
   },
   "account": {
-    "title": "My account",
-    "handle": "Handle",
-    "displayName": "Display name",
+    "title": "Your account",
     "homeCity": "Home city",
-    "dangerZone": "Danger zone",
-    "deleteAccountTitle": "Delete account",
-    "deleteAccountWarning": "This will anonymize your submissions and log you out permanently. This cannot be undone.",
-    "deleteAccountConfirm": "Yes, delete my account"
+    "homeCityHint": "Used to personalize your feed.",
+    "save": "Save",
+    "saved": "Saved",
+    "signOut": "Sign out"
   },
   "premium": {
     "title": "TrendPulse Premium — coming soon",
@@ -150,24 +141,6 @@
     "countryCode": "Country code",
     "officialLanguages": "Official languages",
     "autoTranslateNotice": "New languages will be auto-translated via DeepL."
-  },
-  "stubData": {
-    "pieces": {
-      "p1": "Oversized cargo skirt with side pockets",
-      "p2": "Sheer polka dot blouse",
-      "p3": "Chunky platform mary janes",
-      "p4": "Micro pearl handbag",
-      "p5": "Knit balaclava in butter yellow",
-      "p6": "Asymmetric ruffled mini dress",
-      "p7": "Vintage denim jacket",
-      "p8": "Layered chrome pendants"
-    },
-    "outfits": {
-      "o1": "Soft pink monochrome with pearls",
-      "o2": "Y2K denim & chrome",
-      "o3": "Cottagecore picnic look",
-      "o4": "Tokyo street layered tailoring"
-    }
   },
   "cities": {
     "tokyo": "Tokyo",

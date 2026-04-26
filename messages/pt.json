@@ -10,13 +10,8 @@
     "submit": "Compartilhar",
     "premium": "Premium",
     "login": "Entrar",
-    "signup": "Cadastrar",
     "logout": "Sair",
     "account": "Conta",
-    "changePassword": "Alterar senha",
-    "deleteAccount": "Excluir conta",
-    "myProfile": "Meu perfil",
-    "mySubmissions": "Minhas publicações",
     "admin": "Admin"
   },
   "home": {
@@ -26,10 +21,14 @@
     "shareOutfit": "Compartilhar um look",
     "selectCity": "Escolher cidade",
     "loading": "Carregando tendências…",
-    "empty": "Nenhuma tendência aqui ainda — seja o primeiro a compartilhar.",
     "fresh": "Novo",
     "hot": "Hot",
-    "breaking": "Viral"
+    "breaking": "Viral",
+    "emptyState": {
+      "piecesTitle": "Ainda não há peças em alta em {city}",
+      "outfitsTitle": "Ainda não há looks em alta em {city}",
+      "cta": "Seja o primeiro a compartilhar"
+    }
   },
   "piece": {
     "votes": "{count, plural, =0 {sem votos} one {# voto} other {# votos}}",
@@ -71,31 +70,23 @@
   },
   "auth": {
     "loginTitle": "Bem-vindo de volta",
-    "signupTitle": "Junte-se ao TrendPulse",
+    "loginSubtitle": "Entre ou cadastre-se — vamos te enviar um link por e-mail.",
     "email": "E-mail",
-    "password": "Senha",
-    "confirmPassword": "Confirmar senha",
+    "sendMagicLink": "Enviar link mágico",
+    "checkInbox": "Confira sua caixa de entrada pelo link de acesso.",
+    "errorExpired": "Este link expirou. Solicite um novo.",
+    "errorGeneric": "Algo deu errado. Tente novamente.",
     "continueWithGoogle": "Continuar com Google",
     "or": "ou",
-    "forgotPassword": "Esqueceu a senha?",
-    "ageConfirmation": "Confirmo que tenho 13 anos ou mais",
-    "agreeToTerms": "Concordo com os Termos e a Política de Privacidade",
-    "alreadyHaveAccount": "Já tem uma conta?",
-    "noAccount": "Não tem conta?",
-    "resetPassword": "Redefinir senha",
-    "resetPasswordPrompt": "Digite seu e-mail e enviaremos um link de redefinição.",
-    "resetPasswordSuccess": "Verifique seu e-mail para o link de redefinição.",
     "logoutConfirm": "Tem certeza de que deseja sair?"
   },
   "account": {
-    "title": "Minha conta",
-    "handle": "Usuário",
-    "displayName": "Nome",
-    "homeCity": "Cidade",
-    "dangerZone": "Zona de perigo",
-    "deleteAccountTitle": "Excluir conta",
-    "deleteAccountWarning": "Isso anonimizará suas publicações e encerrará sua sessão permanentemente. Isso não pode ser desfeito.",
-    "deleteAccountConfirm": "Sim, excluir minha conta"
+    "title": "Sua conta",
+    "homeCity": "Cidade principal",
+    "homeCityHint": "Usada para personalizar seu feed.",
+    "save": "Salvar",
+    "saved": "Salvo",
+    "signOut": "Sair"
   },
   "premium": {
     "title": "TrendPulse Premium — em breve",
@@ -150,24 +141,6 @@
     "countryCode": "Código do país",
     "officialLanguages": "Idiomas oficiais",
     "autoTranslateNotice": "Novos idiomas serão traduzidos automaticamente via DeepL."
-  },
-  "stubData": {
-    "pieces": {
-      "p1": "Saia cargo oversized com bolsos laterais",
-      "p2": "Blusa transparente de bolinhas",
-      "p3": "Mary Janes de plataforma grossa",
-      "p4": "Micro bolsa de pérolas",
-      "p5": "Balaclava de tricô amarelo manteiga",
-      "p6": "Mini vestido assimétrico com babados",
-      "p7": "Jaqueta jeans vintage",
-      "p8": "Pingentes cromados em camadas"
-    },
-    "outfits": {
-      "o1": "Monocromático rosa suave com pérolas",
-      "o2": "Y2K jeans e cromo",
-      "o3": "Look cottagecore de piquenique",
-      "o4": "Alfaiataria street em camadas de Tóquio"
-    }
   },
   "cities": {
     "tokyo": "Tóquio",

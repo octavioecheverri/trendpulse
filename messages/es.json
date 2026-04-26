@@ -10,13 +10,8 @@
     "submit": "Compartir",
     "premium": "Premium",
     "login": "Iniciar sesión",
-    "signup": "Registrarse",
     "logout": "Cerrar sesión",
     "account": "Cuenta",
-    "changePassword": "Cambiar contraseña",
-    "deleteAccount": "Eliminar cuenta",
-    "myProfile": "Mi perfil",
-    "mySubmissions": "Mis publicaciones",
     "admin": "Admin"
   },
   "home": {
@@ -26,10 +21,14 @@
     "shareOutfit": "Compartir un outfit",
     "selectCity": "Elegir ciudad",
     "loading": "Cargando tendencias…",
-    "empty": "Aún no hay tendencias aquí — sé el primero en compartir una.",
     "fresh": "Nuevo",
     "hot": "Hot",
-    "breaking": "Viral"
+    "breaking": "Viral",
+    "emptyState": {
+      "piecesTitle": "Aún no hay prendas en tendencia en {city}",
+      "outfitsTitle": "Aún no hay outfits en tendencia en {city}",
+      "cta": "Sé el primero en compartir"
+    }
   },
   "piece": {
     "votes": "{count, plural, =0 {sin votos} one {# voto} other {# votos}}",
@@ -71,31 +70,23 @@
   },
   "auth": {
     "loginTitle": "Bienvenido de nuevo",
-    "signupTitle": "Únete a TrendPulse",
+    "loginSubtitle": "Inicia sesión o regístrate — te enviaremos un enlace por email.",
     "email": "Correo electrónico",
-    "password": "Contraseña",
-    "confirmPassword": "Confirmar contraseña",
+    "sendMagicLink": "Enviar enlace mágico",
+    "checkInbox": "Revisa tu bandeja de entrada para el enlace de acceso.",
+    "errorExpired": "Este enlace ha expirado. Solicita uno nuevo.",
+    "errorGeneric": "Algo salió mal. Inténtalo de nuevo.",
     "continueWithGoogle": "Continuar con Google",
     "or": "o",
-    "forgotPassword": "¿Olvidaste tu contraseña?",
-    "ageConfirmation": "Confirmo que tengo 13 años o más",
-    "agreeToTerms": "Acepto los Términos y la Política de privacidad",
-    "alreadyHaveAccount": "¿Ya tienes cuenta?",
-    "noAccount": "¿No tienes cuenta?",
-    "resetPassword": "Restablecer contraseña",
-    "resetPasswordPrompt": "Ingresa tu correo y te enviaremos un enlace para restablecer.",
-    "resetPasswordSuccess": "Revisa tu correo para el enlace de restablecimiento.",
     "logoutConfirm": "¿Estás seguro de que quieres cerrar sesión?"
   },
   "account": {
-    "title": "Mi cuenta",
-    "handle": "Usuario",
-    "displayName": "Nombre",
-    "homeCity": "Ciudad",
-    "dangerZone": "Zona de peligro",
-    "deleteAccountTitle": "Eliminar cuenta",
-    "deleteAccountWarning": "Esto anonimizará tus publicaciones y cerrará tu sesión permanentemente. No se puede deshacer.",
-    "deleteAccountConfirm": "Sí, eliminar mi cuenta"
+    "title": "Tu cuenta",
+    "homeCity": "Ciudad principal",
+    "homeCityHint": "Se usa para personalizar tu feed.",
+    "save": "Guardar",
+    "saved": "Guardado",
+    "signOut": "Cerrar sesión"
   },
   "premium": {
     "title": "TrendPulse Premium — próximamente",
@@ -150,24 +141,6 @@
     "countryCode": "Código de país",
     "officialLanguages": "Idiomas oficiales",
     "autoTranslateNotice": "Los nuevos idiomas se traducirán automáticamente con DeepL."
-  },
-  "stubData": {
-    "pieces": {
-      "p1": "Falda cargo oversize con bolsillos laterales",
-      "p2": "Blusa transparente de lunares",
-      "p3": "Mary Janes de plataforma gruesa",
-      "p4": "Micro bolso de perlas",
-      "p5": "Pasamontañas tejido en amarillo mantequilla",
-      "p6": "Mini vestido asimétrico con volantes",
-      "p7": "Chaqueta de mezclilla vintage",
-      "p8": "Colgantes cromados en capas"
-    },
-    "outfits": {
-      "o1": "Monocromático rosa suave con perlas",
-      "o2": "Y2K mezclilla y cromo",
-      "o3": "Look cottagecore de picnic",
-      "o4": "Sastrería callejera en capas de Tokio"
-    }
   },
   "cities": {
     "tokyo": "Tokio",

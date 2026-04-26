@@ -10,13 +10,8 @@
     "submit": "공유",
     "premium": "프리미엄",
     "login": "로그인",
-    "signup": "회원가입",
     "logout": "로그아웃",
     "account": "계정",
-    "changePassword": "비밀번호 변경",
-    "deleteAccount": "계정 삭제",
-    "myProfile": "내 프로필",
-    "mySubmissions": "내 게시물",
     "admin": "관리자"
   },
   "home": {
@@ -26,10 +21,14 @@
     "shareOutfit": "코디 공유",
     "selectCity": "도시 선택",
     "loading": "트렌드 로딩 중…",
-    "empty": "아직 트렌드가 없습니다 — 첫 번째로 공유해 보세요.",
     "fresh": "신규",
     "hot": "인기",
-    "breaking": "급상승"
+    "breaking": "급상승",
+    "emptyState": {
+      "piecesTitle": "아직 {city}에서 트렌드 아이템이 없습니다",
+      "outfitsTitle": "아직 {city}에서 트렌드 코디가 없습니다",
+      "cta": "가장 먼저 공유하세요"
+    }
   },
   "piece": {
     "votes": "{count, plural, =0 {투표 없음} other {#표}}",
@@ -71,31 +70,23 @@
   },
   "auth": {
     "loginTitle": "다시 오신 것을 환영합니다",
-    "signupTitle": "TrendPulse 가입",
+    "loginSubtitle": "로그인하거나 가입하세요 — 이메일로 링크를 보내드립니다.",
     "email": "이메일",
-    "password": "비밀번호",
-    "confirmPassword": "비밀번호 확인",
+    "sendMagicLink": "매직 링크 보내기",
+    "checkInbox": "받은편지함에서 로그인 링크를 확인하세요.",
+    "errorExpired": "이 링크는 만료되었습니다. 새 링크를 요청하세요.",
+    "errorGeneric": "문제가 발생했습니다. 다시 시도해주세요.",
     "continueWithGoogle": "Google로 계속",
     "or": "또는",
-    "forgotPassword": "비밀번호를 잊으셨나요?",
-    "ageConfirmation": "13세 이상임을 확인합니다",
-    "agreeToTerms": "이용약관 및 개인정보처리방침에 동의합니다",
-    "alreadyHaveAccount": "이미 계정이 있으신가요?",
-    "noAccount": "계정이 없으신가요?",
-    "resetPassword": "비밀번호 재설정",
-    "resetPasswordPrompt": "이메일을 입력하면 재설정 링크를 보내드립니다.",
-    "resetPasswordSuccess": "재설정 링크를 이메일에서 확인하세요.",
     "logoutConfirm": "로그아웃하시겠습니까?"
   },
   "account": {
     "title": "내 계정",
-    "handle": "사용자명",
-    "displayName": "표시 이름",
     "homeCity": "홈 도시",
-    "dangerZone": "위험 구역",
-    "deleteAccountTitle": "계정 삭제",
-    "deleteAccountWarning": "게시물이 익명화되고 영구적으로 로그아웃됩니다. 되돌릴 수 없습니다.",
-    "deleteAccountConfirm": "네, 계정을 삭제합니다"
+    "homeCityHint": "피드 개인화에 사용됩니다.",
+    "save": "저장",
+    "saved": "저장됨",
+    "signOut": "로그아웃"
   },
   "premium": {
     "title": "TrendPulse 프리미엄 — 출시 예정",
@@ -150,24 +141,6 @@
     "countryCode": "국가 코드",
     "officialLanguages": "공용어",
     "autoTranslateNotice": "새 언어는 DeepL을 통해 자동 번역됩니다."
-  },
-  "stubData": {
-    "pieces": {
-      "p1": "사이드 포켓 오버사이즈 카고 스커트",
-      "p2": "시스루 폴카도트 블라우스",
-      "p3": "청키 플랫폼 메리제인",
-      "p4": "마이크로 펄 핸드백",
-      "p5": "버터 옐로우 니트 바라클라바",
-      "p6": "비대칭 러플 미니 드레스",
-      "p7": "빈티지 데님 재킷",
-      "p8": "레이어드 크롬 펜던트"
-    },
-    "outfits": {
-      "o1": "펄 포인트 소프트 핑크 모노크롬",
-      "o2": "Y2K 데님 & 크롬",
-      "o3": "코티지코어 피크닉 룩",
-      "o4": "도쿄 스트리트 레이어드 테일러링"
-    }
   },
   "cities": {
     "tokyo": "도쿄",

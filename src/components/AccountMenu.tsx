@@ -3,32 +3,26 @@
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
-import { User, LogOut, KeyRound, Trash2, UserCircle } from 'lucide-react';
+import { User as UserIcon, LogOut, UserCircle } from 'lucide-react';
+import type { User } from '@supabase/supabase-js';
+import { signOut } from '@/app/[locale]/account/actions';
 
 type Props = {
-  loggedIn: boolean;
+  user: User | null;
 };
 
-export function AccountMenu({ loggedIn }: Props) {
+export function AccountMenu({ user }: Props) {
   const t = useTranslations('nav');
   const [open, setOpen] = useState(false);
 
-  if (!loggedIn) {
+  if (!user) {
     return (
-      <div className="flex items-center gap-2">
-        <Link
-          href="/login"
-          className="rounded-full px-3 py-1.5 text-sm font-medium hover:bg-pink-50"
-        >
-          {t('login')}
-        </Link>
-        <Link
-          href="/signup"
-          className="rounded-full bg-pink-300 px-3 py-1.5 text-sm font-medium text-foreground hover:bg-pink-400"
-        >
-          {t('signup')}
-        </Link>
-      </div>
+      <Link
+        href="/login"
+        className="rounded-full bg-pink-300 px-3 py-1.5 text-sm font-medium text-foreground hover:bg-pink-400"
+      >
+        {t('login')}
+      </Link>
     );
   }
 
@@ -41,7 +35,7 @@ export function AccountMenu({ loggedIn }: Props) {
         aria-haspopup="menu"
         aria-expanded={open}
       >
-        <User className="size-4" />
+        <UserIcon className="size-4" />
         {t('account')}
       </button>
 
@@ -51,53 +45,27 @@ export function AccountMenu({ loggedIn }: Props) {
           className="absolute right-0 mt-2 w-56 rounded-2xl border border-pink-100 bg-white p-1 shadow-lg"
           onMouseLeave={() => setOpen(false)}
         >
-          <MenuItem href="/account" icon={<UserCircle className="size-4" />}>
-            {t('myProfile')}
-          </MenuItem>
-          <MenuItem href="/account#submissions" icon={<UserCircle className="size-4" />}>
-            {t('mySubmissions')}
-          </MenuItem>
-          <MenuItem href="/account#password" icon={<KeyRound className="size-4" />}>
-            {t('changePassword')}
-          </MenuItem>
-          <hr className="my-1 border-pink-100" />
-          <MenuItem href="/logout" icon={<LogOut className="size-4" />}>
-            {t('logout')}
-          </MenuItem>
-          <MenuItem
-            href="/account#delete"
-            icon={<Trash2 className="size-4 text-red-500" />}
-            danger
+          <Link
+            href="/account"
+            role="menuitem"
+            className="flex items-center gap-2 rounded-xl px-3 py-2 text-sm hover:bg-pink-50"
           >
-            {t('deleteAccount')}
-          </MenuItem>
+            <UserCircle className="size-4" />
+            {t('account')}
+          </Link>
+          <hr className="my-1 border-pink-100" />
+          <form action={signOut}>
+            <button
+              type="submit"
+              role="menuitem"
+              className="flex w-full items-center gap-2 rounded-xl px-3 py-2 text-left text-sm hover:bg-pink-50"
+            >
+              <LogOut className="size-4" />
+              {t('logout')}
+            </button>
+          </form>
         </div>
       )}
     </div>
-  );
-}
-
-function MenuItem({
-  href,
-  icon,
-  children,
-  danger,
-}: {
-  href: string;
-  icon: React.ReactNode;
-  children: React.ReactNode;
-  danger?: boolean;
-}) {
-  return (
-    <Link
-      href={href}
-      role="menuitem"
-      className={`flex items-center gap-2 rounded-xl px-3 py-2 text-sm hover:bg-pink-50 ${
-        danger ? 'text-red-600' : ''
-      }`}
-    >
-      {icon}
-      {children}
-    </Link>
   );
 }
