@@ -1,5 +1,9 @@
 name: build-test
 
+# Runs on the org repo (TrendPul-se/trendpulse) where development happens.
+# The personal mirror (octavioecheverri/trendpulse) doesn't need this — it
+# only receives sync-mirror.yml pushes that Vercel's GitHub App rebuilds.
+
 on:
   pull_request:
   push:
@@ -12,7 +16,7 @@ concurrency:
 jobs:
   lint-typecheck:
     name: Lint & typecheck
-    if: github.repository == 'octavioecheverri/trendpulse'
+    if: github.repository == 'TrendPul-se/trendpulse'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -29,7 +33,7 @@ jobs:
 
   unit-test:
     name: Unit tests
-    if: github.repository == 'octavioecheverri/trendpulse'
+    if: github.repository == 'TrendPul-se/trendpulse'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -45,7 +49,7 @@ jobs:
 
   build:
     name: Build
-    if: github.repository == 'octavioecheverri/trendpulse'
+    if: github.repository == 'TrendPul-se/trendpulse'
     runs-on: ubuntu-latest
     needs: [lint-typecheck, unit-test]
     steps:
@@ -68,7 +72,7 @@ jobs:
   migrations-check:
     name: Migrations lint
     runs-on: ubuntu-latest
-    if: github.repository == 'octavioecheverri/trendpulse' && hashFiles('supabase/migrations/**.sql') != ''
+    if: github.repository == 'TrendPul-se/trendpulse' && hashFiles('supabase/migrations/**.sql') != ''
     steps:
       - uses: actions/checkout@v4
       - uses: supabase/setup-cli@v1

@@ -1,9 +1,13 @@
 name: deploy
 
+# Manual-only until GitHub Environments secrets (SUPABASE_*, VERCEL_*) are
+# configured for the production environment. The actual prod deploy currently
+# happens via Vercel's GitHub App on the personal mirror repo, triggered by
+# sync-mirror.yml. This workflow exists for the future when CI-driven Supabase
+# migrations + Vercel deploys are wanted from the org repo.
+
 on:
-  push:
-    branches: [main]
-  pull_request:
+  workflow_dispatch:
 
 concurrency:
   group: deploy-${{ github.ref }}
@@ -12,7 +16,6 @@ concurrency:
 jobs:
   deploy-supabase:
     name: Apply Supabase migrations
-    if: github.repository == 'octavioecheverri/trendpulse'
     runs-on: ubuntu-latest
     environment: ${{ github.ref == 'refs/heads/main' && 'production' || 'dev' }}
     steps:
@@ -44,7 +47,6 @@ jobs:
 
   deploy-vercel:
     name: Deploy to Vercel
-    if: github.repository == 'octavioecheverri/trendpulse'
     runs-on: ubuntu-latest
     needs: [deploy-supabase]
     environment: ${{ github.ref == 'refs/heads/main' && 'production' || 'dev' }}
@@ -82,16 +84,5 @@ jobs:
           echo "url=$URL" >> $GITHUB_OUTPUT
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-      - name: Comment PR with preview URL
-        if: github.event_name == 'pull_request'
-        uses: actions/github-script@v7
-        with:
-          script: |
-            github.rest.issues.createComment({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              body: `Preview deployed: ${{ steps.deploy.outputs.url }}`
-            })
       - name: Notify
         run: echo "Deployed to ${{ steps.deploy.outputs.url }}"
