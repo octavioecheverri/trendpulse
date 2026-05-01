@@ -226,7 +226,7 @@ Para cada una, diseña dos versiones: **mobile (celular)** y **desktop (computad
 
 ### Cuando termines un diseño
 
-Hazle screenshots desde Claude.ai y mándaselos a Octavio por WhatsApp. Si Claude te dio el código HTML/CSS, también copia ese código y mándaselo. Octavio lo va a usar como referencia para implementar la pantalla de verdad.
+Hazle screenshots desde Claude.ai y mándaselos a Octavio por chat. Si Claude te dio el código HTML/CSS, también copia ese código y mándaselo. Octavio lo va a usar como referencia para implementar la pantalla de verdad.
 
 ---
 
