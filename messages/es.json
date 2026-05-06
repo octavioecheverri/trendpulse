@@ -52,21 +52,16 @@
     "votes": "{count, plural, =0 {sin votos} one {# voto} other {# votos}}"
   },
   "submit": {
-    "pieceTitle": "Compartir una prenda",
-    "outfitTitle": "Compartir un outfit",
-    "mediaType": "¿Cómo quieres compartirlo?",
-    "uploadPhoto": "Subir una foto",
-    "pasteLink": "Pegar un enlace de Instagram o TikTok",
     "title": "Título",
-    "titlePlaceholder": "¿Qué estamos viendo?",
+    "titlePlaceholder": "ej. Falda mini plisada",
+    "outfitTitlePlaceholder": "ej. Domingo por Shibuya",
     "description": "Descripción",
-    "descriptionPlaceholder": "Cuéntanos por qué es interesante…",
+    "descriptionPlaceholder": "De dónde es, cómo te queda, por qué te gusta…",
     "city": "Ciudad",
     "category": "Categoría",
-    "affiliateUrl": "¿Dónde se puede comprar? (opcional)",
-    "submitButton": "Enviar para revisión",
-    "thanks": "¡Gracias! Revisaremos tu publicación pronto.",
-    "pendingNotice": "Tu publicación está en revisión. Aparecerá en el feed una vez aprobada."
+    "affiliateUrl": "Dónde comprarlo (link)",
+    "submitButton": "Enviar a revisión",
+    "pendingNotice": "Te avisamos por email cuando se publique."
   },
   "auth": {
     "loginTitle": "Bienvenido de nuevo",
