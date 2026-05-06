@@ -52,21 +52,16 @@
     "votes": "{count, plural, =0 {no votes} one {# vote} other {# votes}}"
   },
   "submit": {
-    "pieceTitle": "Share a piece",
-    "outfitTitle": "Share an outfit",
-    "mediaType": "How do you want to share it?",
-    "uploadPhoto": "Upload a photo",
-    "pasteLink": "Paste an Instagram or TikTok link",
     "title": "Title",
-    "titlePlaceholder": "What are we looking at?",
+    "titlePlaceholder": "e.g. Pleated mini skirt",
+    "outfitTitlePlaceholder": "e.g. Sunday morning in Shibuya",
     "description": "Description",
-    "descriptionPlaceholder": "Tell us why this is interesting…",
+    "descriptionPlaceholder": "Where it's from, how it fits, why you love it…",
     "city": "City",
     "category": "Category",
-    "affiliateUrl": "Where can people buy it? (optional)",
-    "submitButton": "Submit for review",
-    "thanks": "Thanks! We'll review your submission shortly.",
-    "pendingNotice": "Your submission is in review. It will appear in the feed once approved."
+    "affiliateUrl": "Where to buy (link)",
+    "submitButton": "Send for review",
+    "pendingNotice": "We'll email you when it goes live."
   },
   "auth": {
     "loginTitle": "Welcome back",
