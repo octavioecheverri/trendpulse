@@ -4,6 +4,7 @@ import { revalidatePath } from 'next/cache';
 import { getLocale } from 'next-intl/server';
 import { redirect } from '@/i18n/navigation';
 import { createClient } from '@/lib/supabase/server';
+import { createAdminClient } from '@/lib/supabase/admin';
 
 export async function signOut() {
   const locale = await getLocale();
@@ -44,10 +45,10 @@ export async function updateProfile(formData: FormData): Promise<UpdateProfileRe
     cityId = city.id;
   }
 
-  // Upsert handles the (rare) case where the auth.users -> public.users
-  // trigger didn't run for this user. We fall back to update if upsert
-  // would conflict on RLS.
-  const { error: upsertErr } = await supabase
+  // Use admin client so the upsert works even when the trigger-created row
+  // is missing (no INSERT policy on public.users for regular users).
+  const admin = createAdminClient();
+  const { error: upsertErr } = await admin
     .from('users')
     .upsert(
       {
