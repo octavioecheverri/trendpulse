@@ -52,21 +52,16 @@
     "votes": "{count, plural, =0 {aucun vote} one {# vote} other {# votes}}"
   },
   "submit": {
-    "pieceTitle": "Partager une pièce",
-    "outfitTitle": "Partager une tenue",
-    "mediaType": "Comment voulez-vous la partager ?",
-    "uploadPhoto": "Télécharger une photo",
-    "pasteLink": "Coller un lien Instagram ou TikTok",
     "title": "Titre",
-    "titlePlaceholder": "Qu'est-ce qu'on regarde ?",
+    "titlePlaceholder": "ex. Mini jupe plissée",
+    "outfitTitlePlaceholder": "ex. Dimanche matin à Shibuya",
     "description": "Description",
-    "descriptionPlaceholder": "Dites-nous pourquoi c'est intéressant…",
+    "descriptionPlaceholder": "D'où ça vient, comment ça tombe, pourquoi tu l'aimes…",
     "city": "Ville",
     "category": "Catégorie",
-    "affiliateUrl": "Où peut-on l'acheter ? (optionnel)",
-    "submitButton": "Soumettre pour révision",
-    "thanks": "Merci ! Nous examinerons votre publication bientôt.",
-    "pendingNotice": "Votre publication est en cours de révision. Elle apparaîtra dans le fil une fois approuvée."
+    "affiliateUrl": "Où l'acheter (lien)",
+    "submitButton": "Envoyer pour révision",
+    "pendingNotice": "Nous t'enverrons un e-mail dès que c'est en ligne."
   },
   "auth": {
     "loginTitle": "Bon retour",

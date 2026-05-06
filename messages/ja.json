@@ -52,21 +52,16 @@
     "votes": "{count, plural, =0 {投票なし} other {#票}}"
   },
   "submit": {
-    "pieceTitle": "アイテムを投稿",
-    "outfitTitle": "コーデを投稿",
-    "mediaType": "どのように共有しますか？",
-    "uploadPhoto": "写真をアップロード",
-    "pasteLink": "InstagramまたはTikTokのリンクを貼る",
     "title": "タイトル",
-    "titlePlaceholder": "何を見ていますか？",
+    "titlePlaceholder": "例：プリーツミニスカート",
+    "outfitTitlePlaceholder": "例：渋谷の日曜の朝",
     "description": "説明",
-    "descriptionPlaceholder": "なぜこれが面白いか教えてください…",
+    "descriptionPlaceholder": "どこのもので、どんなフィット感で、なぜ好きか…",
     "city": "都市",
     "category": "カテゴリー",
-    "affiliateUrl": "どこで買える？（任意）",
+    "affiliateUrl": "購入先（リンク）",
     "submitButton": "レビューに送信",
-    "thanks": "ありがとうございます！まもなく審査します。",
-    "pendingNotice": "投稿は審査中です。承認されるとフィードに表示されます。"
+    "pendingNotice": "公開されたらメールでお知らせします。"
   },
   "auth": {
     "loginTitle": "おかえりなさい",

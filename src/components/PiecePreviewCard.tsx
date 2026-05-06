@@ -1,7 +1,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { ArrowBigDown, ArrowBigUp, ShoppingBag, Instagram } from 'lucide-react';
+import { ArrowBigDown, ArrowBigUp, ShoppingBag, Link as LinkIcon } from 'lucide-react';
 import type { PieceCardData } from './PieceCard';
 
 type Props = {
@@ -40,7 +40,7 @@ export function PiecePreviewCard({
           <img src={photoUrl} alt="" className="size-full object-cover" />
         ) : mediaType === 'embed' && embedProvider ? (
           <div className="flex size-full flex-col items-center justify-center gap-2 text-pink-400">
-            <Instagram className="size-8" aria-hidden />
+            <LinkIcon className="size-8" aria-hidden />
             <span className="text-xs">
               {embedProvider === 'tiktok'
                 ? t('piece.viewOnTikTok')

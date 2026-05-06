@@ -52,21 +52,16 @@
     "votes": "{count, plural, =0 {sem votos} one {# voto} other {# votos}}"
   },
   "submit": {
-    "pieceTitle": "Compartilhar uma peça",
-    "outfitTitle": "Compartilhar um look",
-    "mediaType": "Como você quer compartilhar?",
-    "uploadPhoto": "Enviar uma foto",
-    "pasteLink": "Colar um link do Instagram ou TikTok",
     "title": "Título",
-    "titlePlaceholder": "O que estamos vendo?",
+    "titlePlaceholder": "ex. Saia mini plissada",
+    "outfitTitlePlaceholder": "ex. Domingo de manhã em Shibuya",
     "description": "Descrição",
-    "descriptionPlaceholder": "Conte-nos por que isso é interessante…",
+    "descriptionPlaceholder": "De onde é, como cai, por que você gosta…",
     "city": "Cidade",
     "category": "Categoria",
-    "affiliateUrl": "Onde comprar? (opcional)",
+    "affiliateUrl": "Onde comprar (link)",
     "submitButton": "Enviar para revisão",
-    "thanks": "Obrigado! Vamos revisar sua publicação em breve.",
-    "pendingNotice": "Sua publicação está em revisão. Aparecerá no feed após aprovação."
+    "pendingNotice": "Vamos te avisar por e-mail quando estiver no ar."
   },
   "auth": {
     "loginTitle": "Bem-vindo de volta",

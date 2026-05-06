@@ -90,6 +90,13 @@ type OutfitRow = {
   approved_at: string | null;
 };
 
+type OutfitPieceRow = {
+  outfit_id: string;
+  piece_id: string;
+  position_x: number;
+  position_y: number;
+};
+
 export type Database = {
   public: {
     Tables: {
@@ -137,6 +144,26 @@ export type Database = {
             foreignKeyName: 'outfits_city_id_fkey';
             columns: ['city_id'];
             referencedRelation: 'cities';
+            referencedColumns: ['id'];
+          },
+        ];
+      };
+      outfit_pieces: {
+        Row: OutfitPieceRow;
+        Insert: Pick<OutfitPieceRow, 'outfit_id' | 'piece_id'> &
+          Partial<Pick<OutfitPieceRow, 'position_x' | 'position_y'>>;
+        Update: Partial<OutfitPieceRow>;
+        Relationships: [
+          {
+            foreignKeyName: 'outfit_pieces_outfit_id_fkey';
+            columns: ['outfit_id'];
+            referencedRelation: 'outfits';
+            referencedColumns: ['id'];
+          },
+          {
+            foreignKeyName: 'outfit_pieces_piece_id_fkey';
+            columns: ['piece_id'];
+            referencedRelation: 'pieces';
             referencedColumns: ['id'];
           },
         ];

@@ -60,12 +60,11 @@ export function SubmitOutfitForm() {
   const [pending, startTransition] = useTransition();
   const fileRef = useRef<HTMLInputElement>(null);
 
-  // Live search (debounced)
   useEffect(() => {
     if (!draftPin) return;
     let alive = true;
-    setSearching(true);
     const id = window.setTimeout(async () => {
+      setSearching(true);
       const r = await searchPieces(search);
       if (!alive) return;
       setResults(r);

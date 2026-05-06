@@ -3,9 +3,10 @@
 import { useRef, useState, useTransition } from 'react';
 import { useTranslations } from 'next-intl';
 import {
-  Upload, Link as LinkIcon, Camera, Check, X,
+  Upload, Link as LinkIcon, Camera, Check,
   ArrowLeft, AlertCircle,
 } from 'lucide-react';
+import { Link } from '@/i18n/navigation';
 import { CITIES } from '@/lib/i18n/cities';
 import { PiecePreviewCard } from './PiecePreviewCard';
 import { submitPiece } from '@/app/[locale]/submit/piece/actions';
@@ -405,12 +406,12 @@ function SuccessScreen({
         >
           Submit another
         </button>
-        <a
+        <Link
           href="/"
           className="rounded-full border border-pink-100 bg-white px-5 py-2.5 text-sm font-medium hover:bg-pink-50"
         >
           Back to feed
-        </a>
+        </Link>
       </div>
       <p className="mt-3 text-[11px] uppercase tracking-widest opacity-50">
         We’ll email you when it’s live

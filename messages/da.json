@@ -52,21 +52,16 @@
     "votes": "{count, plural, =0 {ingen stemmer} one {# stemme} other {# stemmer}}"
   },
   "submit": {
-    "pieceTitle": "Del et stykke",
-    "outfitTitle": "Del et outfit",
-    "mediaType": "Hvordan vil du dele det?",
-    "uploadPhoto": "Upload et foto",
-    "pasteLink": "Indsæt et Instagram- eller TikTok-link",
     "title": "Titel",
-    "titlePlaceholder": "Hvad kigger vi på?",
+    "titlePlaceholder": "f.eks. Plisseret minikjole",
+    "outfitTitlePlaceholder": "f.eks. Søndag morgen i Shibuya",
     "description": "Beskrivelse",
-    "descriptionPlaceholder": "Fortæl os hvorfor det er interessant…",
+    "descriptionPlaceholder": "Hvor det er fra, hvordan det sidder, hvorfor du elsker det…",
     "city": "By",
     "category": "Kategori",
-    "affiliateUrl": "Hvor kan man købe det? (valgfrit)",
-    "submitButton": "Indsend til gennemgang",
-    "thanks": "Tak! Vi gennemgår dit opslag snart.",
-    "pendingNotice": "Dit opslag er under gennemgang. Det vises i feedet, når det er godkendt."
+    "affiliateUrl": "Hvor kan man købe det (link)",
+    "submitButton": "Send til gennemgang",
+    "pendingNotice": "Vi sender dig en e-mail, når det er live."
   },
   "auth": {
     "loginTitle": "Velkommen tilbage",
